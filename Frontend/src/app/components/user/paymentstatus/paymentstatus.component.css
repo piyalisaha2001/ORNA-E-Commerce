@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpapersok.com/images/high/light-color-flower-background-s0s3phxvwu24nnza.jpg');
+  }
+  
+  .success-message {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .success-icon {
+    font-size: 50px;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .success-message h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .success-message p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .success-message .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }

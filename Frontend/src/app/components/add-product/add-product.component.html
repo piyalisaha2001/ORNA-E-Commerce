@@ -1,0 +1,92 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Product Form</h2>
+    <form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="productName" class="form-label">Product Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="productName"
+          formControlName="productName"
+          placeholder="Enter product name"
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea
+          class="form-control"
+          id="description"
+          formControlName="description"
+          placeholder="Enter description"
+        ></textarea>
+      </div>
+  
+      <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input
+          type="number"
+          class="form-control"
+          id="price"
+          formControlName="price"
+          placeholder="Enter price"
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="stock" class="form-label">Stock</label>
+        <input
+          type="number"
+          class="form-control"
+          id="stock"
+          formControlName="stock"
+          placeholder="Enter stock quantity"
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="categoryId" class="form-label">Category ID</label>
+        <input
+          type="number"
+          class="form-control"
+          id="categoryId"
+          formControlName="categoryId"
+          placeholder="Enter category ID"
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="categoryName" class="form-label">Category Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="categoryName"
+          formControlName="categoryName"
+          placeholder="Enter category name"
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="productImage" class="form-label">Product Image URL</label>
+        <input
+          type="text"
+          class="form-control"
+          id="productImage"
+          formControlName="productImage"
+          placeholder="Enter product image URL"
+        />
+      </div>
+  
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Add Product</button>
+        <button type="button" class="btn btn-secondary" (click)="onReset()">Reset</button>
+        @if (id != null)
+        {
+          <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" (click)="editProduct(id, addProductForm.value)">Update Product</button>
+        } @else
+        {
+          <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" (click)="onSubmit()">Save Product</button>
+        }
+      </div>
+    </form>
+  </div>

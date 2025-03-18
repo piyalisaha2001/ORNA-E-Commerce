@@ -1,0 +1,139 @@
+/* .cart-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .cart-items {
+    margin: 20px 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    padding: 0 15px;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .cart-summary {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .total-amount {
+   font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }  */
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('https://t4.ftcdn.net/jpg/02/98/09/19/360_F_298091989_iwt7Cu7itUiCglCEdKSvfmue4YW3s6VR.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cart-total {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .checkout-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #ff9068;
+    border-color: #ff9068;
+  }

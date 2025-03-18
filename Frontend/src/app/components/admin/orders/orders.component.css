@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+   
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+   
+  th {
+    background: #f4f4f4;
+  }
+   
+  button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+   
+  button:hover {
+    background: #0056b3;
+  }

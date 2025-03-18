@@ -1,0 +1,13 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  button {
+    margin: 0 10px;
+  }
+  

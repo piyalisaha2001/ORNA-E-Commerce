@@ -1,0 +1,83 @@
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+   
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+   
+  th {
+    background: #f4f4f4;
+  } */
+
+  /* Add some margin to the button */
+.btn-primary.mb-3 {
+  margin-bottom: 20px;
+}
+
+/* Style the table container */
+.table-responsive {
+  margin: 20px auto; /* Add margin around the table */
+  max-width: 90%; /* Limit the width of the table */
+  background-color: #f9f9f9; /* Add a background color */
+  padding: 20px; /* Add padding inside the container */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the table */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+/* Style the table header */
+.table thead th {
+  background-color: #007bff; /* Add a background color to the header */
+  color: white; /* Set the text color to white */
+  border-color: #007bff; /* Set the border color */
+}
+
+/* Style the table rows */
+.table tbody tr {
+  background-color: #ffffff; /* Set the background color for rows */
+  transition: background-color 0.3s; /* Add a transition for hover effect */
+}
+
+/* Add a hover effect to table rows */
+.table tbody tr:hover {
+  background-color: #f1f1f1; /* Change the background color on hover */
+}
+
+/* Style the table cells */
+.table td, .table th {
+  padding: 12px; /* Add padding to cells */
+  vertical-align: middle; /* Center the content vertically */
+  border-top: 1px solid #dee2e6; /* Add a border to the top of cells */
+}
+
+/* Style the table borders */
+.table-bordered {
+  border: 1px solid #dee2e6; /* Add a border to the table */
+}
+
+.table-bordered td, .table-bordered th {
+  border: 1px solid #dee2e6; /* Add a border to table cells */
+}
+   
+  button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+   
+  button:hover {
+    background: #0056b3;
+  }

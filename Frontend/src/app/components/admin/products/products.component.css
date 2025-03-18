@@ -1,0 +1,44 @@
+ h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: left;
+  font-weight: bold;
+ }
+
+ .centered-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: flex-start; /* Aligns at the top */
+  height: 100%;
+  padding-top: 20px; /* Adjust padding as needed to move it slightly lower */
+  text-align: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #007bff;
+  color: white !important;
+  border-radius: 5px;
+}
+
+
+.card {
+  border-radius: 10px;
+}
+
+.card-body {
+  font-size: 14px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+.add-product-btn {
+  margin-top: 20px;
+  margin-right: 20px;  /* Adjust the value as needed */
+}

@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp" style="width: 185px;" alt="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home" href="/home">Home</a>
+        </li>
+        <li>
+        <a class="nav-link active" aria-current="page" routerLink="/products" href="/products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/aboutus" href="/aboutus">About Us</a>
+        </li>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </ul>
+      <div>
+        <ul class="list-unstyled">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/addtocart" href="/addtocart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <i class="icon-class-1" style="margin-right: 15px;"></i>
+      <div>
+        <ul class="list-unstyled">
+          <button class="btn btn-danger" routerLink="/login">Logout</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>             
+<div class="products-wrapper">
+  <h1 class="products-heading">{{ selectedCategory ? (selectedCategory | titlecase) + ' Collection' : 'Our Products'}}</h1>
+  <div class="category-images">
+    <div class="category-card" *ngFor="let category of categories" (click)="navigateToCategory(category.name)">
+      <img [src]="category.imageUrl" [alt]="category.name | titlecase" />
+      <p>{{category.name | titlecase}}</p>
+    </div>
+  </div>
+  <div class="products-page">
+    <div class="filter-sidebar"></div>
+    <div class="price-filter" *ngIf="showFilter">
+      <label for="minPrice">Min Price:</label>
+      <input type="number" id="minPrice" [(ngModel)]="minPrice" (input)="applyFilters()">
+      <label for="maxPrice">Max Price:</label>
+      <input type="number" id="maxPrice" [(ngModel)]="maxPrice" (input)="applyFilters()">
+    </div>
+    <button class="filter-toggle" (click)="showFilter = !showFilter">
+      {{ showFilter ? 'Hide Filter' : 'Filter' }}
+    </button>
+    <div class="products-container">
+      <div class="product-card" *ngFor="let product of showFilter ? filteredProducts : userProducts">
+        <img [src]="product.productImage" alt="{{ product.productName }}">
+        <span class="category-badge">{{ product.category?.categoryName }}</span>
+        <h2>{{ product.productName }}</h2>
+        <p class="price">₹{{ product.price }}</p>
+        <p class="descrip">{{ product.description || 'No description available' }}</p>
+        <button class="btn btn-primary" (click)="addToCart(product.productId)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>

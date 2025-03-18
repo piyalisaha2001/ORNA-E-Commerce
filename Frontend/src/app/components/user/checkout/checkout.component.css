@@ -1,0 +1,39 @@
+.checkout-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-image: url('https://t4.ftcdn.net/jpg/02/98/09/19/360_F_298091989_iwt7Cu7itUiCglCEdKSvfmue4YW3s6VR.jpg');
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: #fff;
+}
+
+.btn-primary {
+  background-color: #ff6f61;
+  border-color: #ff6f61;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #ff9068;
+  border-color: #ff9068;
+}

@@ -1,0 +1,66 @@
+h4 {
+    text-align: center;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Adjust this value to position the text box further left or right */
+    transform: translateY(-50%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+.fixed-size {
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+
+  .zoom-heading {
+    color: #ffcee4; /* Change to your desired color */
+    font-family: 'Georgia', serif; /* Change to your desired font family */
+    font-size: 40px; /* Change to your desired font size */
+    font-weight: 700; /* Change to your desired font weight */
+    text-shadow: 2px 2px 4px #000000; /* Add a text shadow */
+  }
+  
+  .zoom-text {
+    animation: zoomIn 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+  .custom-heading {
+    color: #f70776; /* Change to your desired color */
+    font-family: 'Arial', sans-serif; /* Change to your desired font family */
+    font-size: 24px; /* Change to your desired font size */
+    font-weight: bold; /* Change to your desired font weight */
+  }
+  
+  .animated-text {
+    animation: fadeIn 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

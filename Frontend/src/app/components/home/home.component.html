@@ -1,0 +1,190 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+        style="width: 185px;" alt="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/home" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/products" href="/products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/aboutus" href="/aboutus">About Us</a>
+              </li>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              
+              </ul>
+              <div>
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/addtocart" href="/addtocart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg></a>
+                </li>
+                </ul>
+            </div>
+            <i class="icon-class-1" style="margin-right: 15px;"></i>
+            <div>
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <button class="btn btn-danger" routerLink="/login">Logout</button>
+                  </li>
+                </ul>
+            </div>
+
+          </div>
+    </div>
+</nav>                           
+</header>
+<main>
+    <div class="container-fluid p-0">
+            <div class="col-md-6 p-0">
+                <img src="https://e0.pxfuel.com/wallpapers/849/793/desktop-wallpaper-high-resolution-gold-jewellery-diamond-jewellery.jpg" alt="Homepage" class="big-image" height="550px" width="1270px">
+                <div class="text-overlay">
+                  <h1 class="zoom-heading zoom-text">Shop Our Latest Products</h1>
+                  <button class="btn btn-primary" (click)="navigateToProducts()">Shop Now</button>
+              </div>
+        </div>
+    </div> 
+</main>
+<footer class="text-center text-white" style="background-color: #caced1;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Heading -->
+    <section class="mb-4">
+      <h2 class="custom-heading animated-text">Our Collections</h2>
+    </section>
+    <!-- Section: Heading -->
+    <!-- Section: Images -->
+    <section class="">
+      <div class="row">
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            mdbRipple
+            rippleColor="light"
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+          >
+          <a href="/products">
+            <img
+              src="https://indianjeweller.in/public/assets/uploads/news/1687406657_1331366709897808c272.jpg"
+              class="w-100 fixed-size"
+            />
+            <div
+              class="mask"
+              style="background-color: rgba(251, 251, 251, 0.2);"
+            ></div>
+          </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            mdbRipple
+            rippleColor="light"
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+          >
+          <a href="/products">
+            <img
+              src="https://media.istockphoto.com/id/1415483167/photo/gold-jewelry-diamond-rings-show-in-luxury-retail-store-display-showcase.jpg?s=612x612&w=0&k=20&c=BkT5LNV1MuXwY7ZYOQ1SH8kcklpd7Lcwr5mIdWZz5Uo="
+              class="w-100 fixed-size"
+            />
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            mdbRipple
+            rippleColor="light"
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+          >
+          <a href="/products">
+            <img
+              src="https://cdn.i-scmp.com/sites/default/files/styles/768x768/public/d8/images/canvas/2024/08/06/7cd9cd4c-67fe-4bea-8959-3b3da961ea4a_88d02254.jpg?itok=QVaDIPdQ&v=1722917302"
+              class="w-100 fixed-size"
+            />
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            mdbRipple
+            rippleColor="light"
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+          >
+          <a href="/products">
+            <img
+              src="https://www.palmonas.com/cdn/shop/files/01_e869a853-ae2b-4543-8f22-61455b80f6a6.webp?v=1734434031&width=500"
+              class="w-100 fixed-size"
+            />
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            mdbRipple
+            rippleColor="light"
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+          >
+          <a href="/products">
+            <img
+              src="https://www.dfupublications.com/images/2023/11/01/Irasva%20Fine%20Jewellery%20Opens%20Second%20Store%20in%20Mumbai_large.jpg"
+              class="w-100 fixed-size"
+            />
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            mdbRipple
+            rippleColor="light"
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+          >
+          <a href="/products">
+            <img
+              src="https://garrard.com/wp-content/uploads/2021/11/Model-wears-Garrard-high-jewellery-collection-Rose-Garden-High-Jewellery-Suite-2023-close-up.jpg"
+              class="w-100 fixed-size"
+            />
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Images -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2025 Copyright:
+    <a class="text-white" href="orna.com/">Orna.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
